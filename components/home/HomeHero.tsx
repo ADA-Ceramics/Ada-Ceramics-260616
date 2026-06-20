@@ -21,12 +21,7 @@ export default function HomeHero({ locale }: HomeHeroProps) {
         quality={70}
         className="object-cover"
       />
-      {/* 提升文字可读性的暖色遮罩 */}
-      <div
-        className="absolute inset-0 bg-gradient-to-b from-[#f5f3ef]/85 via-[#f5f3ef]/70 to-[#f5f3ef]/60"
-        aria-hidden="true"
-      />
-
+     
       {/* 居中内容 */}
       <div className="relative z-10 w-full max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-28 lg:py-32 text-center">
         <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm border border-[#e3dccf] rounded-full px-4 py-1.5 mb-7">
