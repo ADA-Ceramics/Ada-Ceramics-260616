@@ -4,16 +4,19 @@ import { ArrowRight, Shield, Globe } from "lucide-react"
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-[72px] bg-[#f5f3ef] overflow-hidden">
-      <div className="absolute inset-0 bg-[#f5f3ef]">
+    <section className="relative min-h-screen flex items-center justify-center pt-[72px] overflow-hidden">
+      {/* 移除遮挡图片的纯色底色 */}
+      <div className="absolute inset-0">
         <Image
           src="/wholesale-premium-beige-ceramic-plates.webp"
-          alt="Beige ceramic tableware wholesale"
+          alt="Beige ceramic tableware wholesale bulk factory"
           fill
           priority
-          className="object-cover object-top opacity-60"
+          className="object-cover object-center opacity-85"
           sizes="100vw"
         />
+        {/* 半透明白色遮罩，保证文字清晰可读 */}
+        <div className="absolute inset-0 bg-white/35"></div>
       </div>
 
       <div className="relative z-10 text-center px-6 py-20 max-w-[900px] mx-auto">
