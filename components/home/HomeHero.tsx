@@ -19,7 +19,7 @@ export default function HomeHero({ locale }: HomeHeroProps) {
         fetchPriority="high"
         sizes="100vw"
         quality={70}
-      className="object-cover" style={{opacity:0.8}}
+      className="object-cover" style={{opacity:0.7}}
       />
      
       {/* 居中内容 */}
