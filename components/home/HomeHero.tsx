@@ -44,10 +44,8 @@ export default function HomeHero({ locale }: HomeHeroProps) {
         </p>
 
         <p className="text-sm sm:text-base text-[#6b6862] leading-relaxed mb-9 max-w-2xl mx-auto">
-          ADA Ceramics supplies bulk wholesale ceramic dinnerware, oven-safe bakeware and table decor
-          drinkware to restaurants, hotels, importers and retail brands worldwide — a full OEM custom
-          ceramics factory in Chaozhou delivering low-MOQ private-label production across all four product
-          lines.
+         ADA Ceramics is a Chaozhou Trading-Manufacturing Factory, your trusted source for wholesale ceramic tableware – offering dinnerware, 
+          bakeware, table decor drinkware and full OEM custom ceramic solutions
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
