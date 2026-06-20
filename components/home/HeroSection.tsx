@@ -7,8 +7,8 @@ export default function HeroSection() {
     <section className="relative min-h-screen flex items-center justify-center pt-[72px] bg-[#f5f3ef] overflow-hidden">
       <div className="absolute inset-0 bg-[#f5f3ef]">
         <Image
-          src="/premium_beige_ceramic_plate_.webp"
-          alt="Beige ceramic tableware"
+          src="/wholesale-premium_beige_ceramic_plates"
+          alt="Beige ceramic tableware wholesale"
           fill
           priority
           className="object-cover object-top opacity-60"
