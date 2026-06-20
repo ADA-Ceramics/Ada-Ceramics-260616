@@ -12,7 +12,7 @@ export default function HeroSection() {
         backgroundRepeat: "no-repeat"
       }}
     >
-      {/* 半透明白遮罩，保证文字清晰 */}
+      {/* 半透明白遮罩，保证文字清晰可读 */}
       <div className="absolute inset-0 bg-white/60"></div>
 
       <div className="relative z-10 text-center px-6 py-20 max-w-[900px] mx-auto">
