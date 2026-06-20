@@ -1,19 +1,20 @@
 import Link from "next/link"
+import Image from "next/image"
 import { ArrowRight, Shield, Globe } from "lucide-react"
 
 export default function HeroSection() {
   return (
-    <section 
-      className="relative min-h-screen flex items-center justify-center pt-[72px]"
-      style={{
-        backgroundImage: `url("/wholesale-premium-beige-ceramic-plates.webp")`,
-        backgroundSize: "cover",
-        backgroundPosition: "center bottom",
-        backgroundRepeat: "no-repeat"
-      }}
-    >
-      {/* 半透明白遮罩，保证文字清晰可读 */}
-      <div className="absolute inset-0 bg-white/60"></div>
+    <section className="relative min-h-screen flex items-center justify-center pt-[72px] bg-[#f5f3ef] overflow-hidden">
+      <div className="absolute inset-0 bg-[#f5f3ef]">
+        <Image
+          src="/wholesale-premium-beige-ceramic-plates.webp"
+          alt="Beige ceramic tableware wholesale"
+          fill
+          priority
+          className="object-cover object-top opacity-60"
+          sizes="100vw"
+        />
+      </div>
 
       <div className="relative z-10 text-center px-6 py-20 max-w-[900px] mx-auto">
         <div className="inline-flex items-center gap-2 bg-white border border-gray-200 rounded-full px-5 py-2 mb-8">
