@@ -1,27 +1,21 @@
 import Link from "next/link"
-import Image from "next/image"
 import { ArrowRight, Shield, Globe } from "lucide-react"
 
 export default function HeroSection() {
   return (
-    {/* 关键：给最外层section加 relative，作为fill图片的定位基准 */}
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* 背景图层：absolute铺满父容器 */}
-      <div className="absolute inset-0">
-        <Image
-          src="/wholesale-premium-beige-ceramic-plates.webp"
-          alt="Assorted cream and white wholesale ceramic bowls and plates flat lay on a warm beige table"
-          fill
-          priority
-          className="object-cover object-bottom opacity-90"
-          sizes="100vw"
-        />
-        {/* 浅白色遮罩，不盖住浅色餐具 */}
-        <div className="absolute inset-0 bg-white/60"></div>
-      </div>
+    <section 
+      className="relative min-h-screen flex items-center justify-center pt-[72px]"
+      style={{
+        backgroundImage: `url("/wholesale-premium-beige-ceramic-plates.webp")`,
+        backgroundSize: "cover",
+        backgroundPosition: "center bottom",
+        backgroundRepeat: "no-repeat"
+      }}
+    >
+      {/* 半透明白遮罩，保证文字清晰 */}
+      <div className="absolute inset-0 bg-white/60"></div>
 
-      {/* 内容层：层级高于背景，向上偏移避开导航栏 */}
-      <div className="relative z-10 text-center px-6 py-20 max-w-[900px] mx-auto -mt-[72px]">
+      <div className="relative z-10 text-center px-6 py-20 max-w-[900px] mx-auto">
         <div className="inline-flex items-center gap-2 bg-white border border-gray-200 rounded-full px-5 py-2 mb-8">
           <div className="w-2 h-2 rounded-full border border-gray-500"></div>
           <span className="text-sm text-gray-600">Wholesale & Custom Ceramic</span>
