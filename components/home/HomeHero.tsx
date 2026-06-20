@@ -12,8 +12,8 @@ export default function HomeHero({ locale }: HomeHeroProps) {
     <section className="relative min-h-[88vh] flex items-center justify-center overflow-hidden">
       {/* 背景实景大图 —— next/image 优化 LCP：自动 preload + fetchPriority=high + AVIF/WebP 降级，priority 禁用懒加载 */}
       <Image
-        src="/hero-ceramic-bowls-flatlay.png"
-        alt="Assorted cream and white wholesale ceramic bowls and plates flat lay on a warm beige table"
+        src="/premium-beige-ceramic-plates-manufacturer.webp"
+        alt="Premium Beige Ceramic Dinnerware wholesale Plates & Bowls Manufacturer"
         fill
         priority
         fetchPriority="high"
