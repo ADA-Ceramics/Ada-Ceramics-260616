@@ -314,13 +314,16 @@ export function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             {/* 网站Logo */}
-            <Link href={`/${currentLangCode}`} className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-xl">C</span>
-              </div>
-              <span className="text-xl font-bold">ADA</span>
+           <Link href={`/${currentLangCode}`} className="flex items-center gap-2">
+  <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+    <span className="text-primary-foreground font-bold text-xl">C</span>
+  </div>
+  {/* flex-col 垂直分行，实现 ADA / CERAMICS 两行 */}
+  <div className="flex flex-col leading-none">
+    <span className="text-xl font-bold">ADA</span>
     <span className="text-xl font-bold">CERAMICS</span>
-            </Link>
+  </div>
+</Link>
 
             {/* 桌面导航栏 */}
             <nav className="hidden lg:flex items-center gap-7">
