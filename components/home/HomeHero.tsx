@@ -23,7 +23,7 @@ export default function HomeHero({ locale }: HomeHeroProps) {
       />
       {/* 提升文字可读性的暖色遮罩 */}
       <div
-        className="absolute inset-0 bg-gradient-to-b from-[#f5f3ef]/85 via-[#f5f3ef]/70 to-[#f5f3ef]/85"
+        className="absolute inset-0 bg-gradient-to-b from-[#f5f3ef]/85 via-[#f5f3ef]/70 to-[#f5f3ef]/60"
         aria-hidden="true"
       />
 
